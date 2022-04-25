@@ -1,0 +1,2 @@
+# Notifly
+Notifly is a python web application that leverages google chart data analytics and Twilio API to provide more visibility on medical readiness status for the Hickam Medical Group and Unit Managers (UDMs/UHMs). The workflow is broken down in the “Users and Workflows'' section below. The functionality is to allow users to view data analytics and also send SMS notifications to all airmen with items due.
