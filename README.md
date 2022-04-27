@@ -8,10 +8,9 @@ sudo apt install python3-pip
 pip3 install -r requirements.txt
 ```
 
-Twillio account-You need an account_sid and auth_token to run the application
+For the Twilio API, you need an account_sid and auth_token to run the application
 
 How to run:
-1)Clone the GitHub repository
-2)Change directories until you are in the team nova directory
-3)Type into the command line: python3 app.py [account_sid] [auth_token]
-4)Follow the link to launch the web application
+```angular2html
+python3 app.py [account_sid] [auth_token]
+```
