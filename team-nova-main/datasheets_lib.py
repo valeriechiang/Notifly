@@ -136,8 +136,8 @@ def clean_contact_sheet(contact_df):
 def make_sms_messages(due_df):
     sms_list = []
     for idx, row in due_df.iterrows():
-        msg_string = "You are due for the following: " + ', '.join(row['Items Due for Airmen']) + \
-                     ". Please check the AirForce Portal to verify your IMR status."
+        msg_string = "This is a message from the 15th Medical Group. You are due for the following: " + ', '.join(row['Items Due for Airmen']) + \
+                     ". Please check the Air Force Portal to verify your IMR status."
         sms_list.append(msg_string)
     due_df['Message'] = sms_list
 
