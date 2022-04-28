@@ -12,5 +12,6 @@ For the Twilio API, you need an account_sid and auth_token to run the applicatio
 
 How to run:
 ```angular2html
+cd team-nova-main
 python3 app.py [account_sid] [auth_token]
 ```
