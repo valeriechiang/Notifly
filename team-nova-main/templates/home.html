@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block body %}
+<div id="class-content">
+    <h1 class="title-text">NotiFly</h1>
+    <h2 class="descriptive-text">A notification system and data analyzer for medical readiness</h2>
+    <a class="red-btn" href="{{url_for('select_user')}}" >Get Started</a>
+</div>
+{% endblock %}

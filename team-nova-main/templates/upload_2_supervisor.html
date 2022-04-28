@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h1 class="descriptive-text">Welcome, Medical Group!</h1>
+
+    <h2 class="small-text">Please upload one phone number spreadsheet below</h2>
+    <h2 class="descriptive-text mydiv">Columns must be: First Name, Last Name, DOB, Phone Number</h2>
+    <!-- <div class="hide">
+      <img src="{{url_for('static', filename='samplecontact.png')}}"  width="500" height="200">
+    </div> -->
+
+    {%for message in err%}
+    <h2 class="error-text">{{message}}</h2>
+    {%endfor%}
+    <div id="asims-form">
+      <form action="uploadphonenumbers" method="POST" enctype="multipart/form-data">
+        <div class="dashed-box flex-v">
+          <div>
+            <label>Select spreadsheet</label>
+            <div id="upload-text">
+              <input type="file" name="phone_numbers">
+              <!-- <label class="custom-file-label" for="image">Select CSV...</label> -->
+            </div>
+          </div>
+  
+        </div>
+  
+  
+        <button type="submit" class="btn-red right-btn">
+          <a class="white-txt" >Next</a>
+        </button>
+
+        <!-- <button class="btn-red left-btn">
+          <a class="white-txt" href="{{url_for('superUploadASIMS')}}" >Back</a>
+        </button> -->
+      </form>
+    </div>
+  
+    
+</div>
+{% endblock %}
+

@@ -1,0 +1,55 @@
+Last Name,First Name,Unit,Imm,Dental,Dental Class,Lab,DLC,PHA,IMR,Action List,Eqp,DNA,HIV,Blood,Items Due for Airmen,Due,All Items Due
+WILKERSON,LIVIA,SPECIAL OPERATIONS,G,G,2,G,G,R,R,|PHA|,,G,G,G,,False,['PHA']
+MERCER,CHEYENNE,15 OP MED READINESS SQ,R,G,2,G,G,Y,R,|PPD|PHA|PHAQ|Distant Visual Acuity|,Y,G,G,G,"['Immunization(s)', 'PHA', 'Occupational health requirements and/or optometry exam']",True,"['Distant Visual Acuity', 'PHA', 'PHAQ', 'PPD']"
+ERICKSON,TROY,690 CYBER OPERATIONS SQ,G,G,2,G,G,Y,Y,|PHA|PHAQ|,,G,G,G,['PHA'],True,"['PHA', 'PHAQ']"
+WRIGHT,EMMY,17 OP WEATHER SQ,G,Y,2,G,G,R,R,|Dental|PHA|MHA|,,G,G,G,"['Dental exam', 'PHA']",True,"['Dental', 'MHA', 'PHA']"
+FINLEY,BRAIDEN,PACIFIC AIR FORCES OL00A2,G,G,2,G,G,G,G,,G,G,G,G,,False,[]
+BOYER,KADE,747 CYBERSPACE SQ,Y,G,2,Y,G,Y,Y,"|Influenza, Northern Hemisphere|HIV|PHA|MHA|",,G,Y,G,"['Immunization(s)', 'Lab Screening(s)', 'PHA']",True,"['HIV', 'Influenza, Northern Hemisphere', 'MHA', 'PHA']"
+CHOI,CRISTINA,25 AIR SUPT OPNS SQ,Y,G,1,G,G,G,Y,"|Influenza, Northern Hemisphere|",G,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere']"
+JEFFERSON,RAMIRO,17 OP WEATHER SQ,G,G,2,G,G,Y,Y,|PHA|PHAQ|DHA3|,G,G,G,G,['PHA'],True,"['DHA3', 'PHA', 'PHAQ']"
+DICKERSON,QUINTON,17 OP WEATHER SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+ADAMS,OLIVER,PACIFIC AIR FORCES,G,Y,2,Y,G,G,Y,|Dental|HIV|,,G,Y,G,"['Lab Screening(s)', 'Dental exam']",True,"['Dental', 'HIV']"
+UNDERWOOD,CONOR,AF LEGAL OP AGENCY,G,R,3,G,R,Y,R,|PHA|,,G,G,G,['Dental exam'],True,['PHA']
+SHAH,PRESTON,AFELM USPACOM,G,Y,2,G,G,R,R,|Dental|PHA|MHA|,G,G,G,G,"['Dental exam', 'PHA']",True,"['Dental', 'MHA', 'PHA']"
+MASSEY,FLETCHER,15 AIRCRAFT MAINT SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+SIMS,PAUL,647 LOGISTICS READINES SQ,G,G,2,G,G,Y,Y,|PHA|,,G,G,G,,False,['PHA']
+VILLANUEVA,AVERY,15 AIRCRAFT MAINT SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+GOLDEN,NYASIA,AFELM USPACOM,Y,R,4,R,G,R,R,"|COVID-19|Influenza, Northern Hemisphere|Military Dental|HIV|PHA|PHAQ|",,G,R,G,"['Immunization(s)', 'Lab Screening(s)', 'PHA']",True,"['COVID-19', 'HIV', 'Influenza, Northern Hemisphere', 'Military Dental', 'PHA', 'PHAQ']"
+MURRAY,MOISES,352 CYBER OPERATIONS SQ,G,G,2,G,G,Y,Y,|PHA|Distant Visual Acuity|,Y,G,G,G,['Occupational health requirements and/or optometry exam'],True,"['Distant Visual Acuity', 'PHA']"
+SCHULTZ,CARA,735 AIR MOBILITY SQ,R,Y,2,G,G,G,R,"||COVID-19|Influenza, Northern Hemisphere|Dental|",,G,G,G,"['Immunization(s)', 'Dental exam']",True,"['COVID-19', 'Dental', 'Influenza, Northern Hemisphere']"
+CORTEZ,AMARI,766 ENTERPRISE SOURCNG SQ,G,G,2,G,R,Y,R,|PHA|,,G,G,G,,False,['PHA']
+CHURCH,EVA,324 INTELLIGENCE SQ,G,G,1,G,G,G,G,,G,G,G,G,,False,[]
+CORTEZ,MALAKAI,8 INTELLIGENCE SQ,G,G,1,G,G,G,G,,,G,G,G,,False,[]
+CHURCH,LIVIA,25 AIR SUPT OPNS SQ,G,R,4,G,G,G,R,|Dental|,G,G,G,G,,False,['Dental']
+WARD,ISSAC,AFELM USPACOM,Y,G,1,G,G,R,R,"|Influenza, Northern Hemisphere|PHA|",,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere', 'PHA']"
+KERR,PETER,692 INTL/SURVEIL/RECON GP,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+HOLMES,TARYN,792 INTEL SUPPORT SQ,G,G,2,G,G,Y,Y,|PHA|,,G,G,G,,False,['PHA']
+FORBES,AIDEN,PACIFIC AIR FORCES OLA3A6,G,G,2,G,G,G,G,|PHAQ|,,G,G,G,['PHA'],True,['PHAQ']
+HANEY,EDGAR,352 CYBER OPERATIONS SQ,Y,G,2,G,G,G,Y,"|Influenza, Northern Hemisphere|",,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere']"
+MORENO,LEANNA,352 CYBER OPERATIONS SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+CASTANEDA,FRANK,613 AIR OPERATIONS,G,G,1,G,G,R,R,|PHA|,,G,G,G,,False,['PHA']
+SELLERS,DAMON,AFELM JIOC,G,R,4,G,R,G,R,|Dental|,,G,G,G,,False,['Dental']
+HAMILTON,GERARDO,690 CYBER OPERATIONS SQ,G,G,2,G,G,G,G,|MHA|,,G,G,G,['PHA'],True,['MHA']
+GRIFFIN,SERENITY,AFELM JIOC,Y,G,2,G,G,G,Y,"|Influenza, Northern Hemisphere|",,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere']"
+POWERS,ASHTYN,25 AIR SUPT OPNS SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+MOLINA,TANIYA,324 INTELLIGENCE SQ,G,G,2,G,G,Y,Y,|PHA|MHA|,,G,G,G,['PHA'],True,"['MHA', 'PHA']"
+SHEA,ASHLEE,25 AIR SUPT OPNS SQ,G,G,2,G,G,G,G,|PHAQ|,,G,G,G,['PHA'],True,['PHAQ']
+BRANCH,JIMMY,647 SECURITY FORCES SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+KOCH,PHOENIX,613 AIR OPERATIONS,G,Y,2,G,R,Y,R,|Dental|PHA|PHAQ|,,G,G,G,"['Dental exam', 'PHA']",True,"['Dental', 'PHA', 'PHAQ']"
+PRINCE,RAINA,25 AIR SUPT OPNS SQ,R,G,2,Y,G,G,R,|COVID-19|HIV|,G,G,Y,G,"['Immunization(s)', 'Lab Screening(s)']",True,"['COVID-19', 'HIV']"
+WELLS,ROSELYN,690 CYBER OPERATIONS SQ,G,G,2,G,G,Y,Y,|PHA|MHA|,,G,G,G,['PHA'],True,"['MHA', 'PHA']"
+NICHOLS,GABRIELA,15 WING,R,Y,2,G,G,Y,R,"||Influenza, Northern Hemisphere|Td|Dental|PHA|PHAQ|",,G,G,G,"['Immunization(s)', 'Dental exam', 'PHA']",True,"['Dental', 'Influenza, Northern Hemisphere', 'PHA', 'PHAQ', 'Td']"
+WHEELER,JAYLIN,647 CIVIL ENGINEER SQ,G,R,4,G,G,G,R,|Dental|,,G,G,G,,False,['Dental']
+WADE,ASHLYN,747 CYBERSPACE SQ,G,G,2,G,G,G,G,|PHAQ|,,G,G,G,['PHA'],True,['PHAQ']
+CHAMBERS,PIERCE,PACIFIC AIR FORCES OLA3A6,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+NIXON,ALFRED,PACIFIC AIR FORCES,Y,G,2,G,G,G,Y,"|Influenza, Northern Hemisphere|",,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere']"
+KIM,JOURNEY,PACIFIC AIR FORCES OLA3A6,G,G,2,G,G,R,R,|PHA|MHA|DHA3|,,G,G,G,['PHA'],True,"['DHA3', 'MHA', 'PHA']"
+BAKER,MELANIE,792 INTEL SUPPORT SQ,G,G,2,G,G,G,G,,,G,G,G,,False,[]
+WARD,BRAXTON,37 INTELLIGENCE SQ,G,G,2,G,R,R,R,|PHA|,G,G,G,G,,False,['PHA']
+MATHIS,JERRY,647 CIVIL ENGINEER SQ,Y,G,2,G,G,G,Y,"|Influenza, Northern Hemisphere|",,G,G,G,['Immunization(s)'],True,"['Influenza, Northern Hemisphere']"
+KIRBY,AIDAN,613 AIR OPERATIONS,G,R,4,G,G,G,R,|Dental|,,G,G,G,,False,['Dental']
+COMBS,TYLER,PACIFIC AIR FORCES OLA400,G,R,4,G,G,G,R,|Dental|,,G,G,G,,False,['Dental']
+MCCOY,BENTLEY,AFELM JIOC,G,Y,1,G,G,G,Y,|Dental|,,G,G,G,['Dental exam'],True,['Dental']
+ARIAS,MYAH,647 LOGISTICS READINES SQ,G,R,4,G,G,Y,R,|Dental|PHA|,,G,G,G,,False,"['Dental', 'PHA']"
+SOTO,MALAKAI,15 OPERATIONS SUPPORT SQ,G,G,1,G,G,G,G,|PHAQ|,G,G,G,G,['PHA'],True,['PHAQ']
+WEBB,LILLIAN,PACIFIC AIR FORCES OLA3A6,R,G,1,Y,R,G,R,|Td|HIV|PHAQ|,,G,Y,G,"['Immunization(s)', 'Lab Screening(s)']",True,"['HIV', 'PHAQ', 'Td']"

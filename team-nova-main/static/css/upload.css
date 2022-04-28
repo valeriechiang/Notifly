@@ -1,0 +1,87 @@
+#welcome-content {
+  text-align: center;
+  /* margin: 0 auto;
+  align-items: center; */
+  margin: 30px;
+}
+
+#asims-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.descriptive-text {
+    color: #323B6C;
+    font-size: 18px;
+    font-weight: normal;
+    margin:5px;
+    margin-bottom: 15px;
+  }
+
+.small-text {
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.error-text {
+  color: red;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.dashed-box {
+  border-radius: 10px;
+  border-style: dashed;
+  /* margin: auto; */
+  margin-top: 30px;
+  width: 500px;
+  height: 250px;
+}
+
+.btn-red {
+  background-color: #AC1E1E;
+  border-radius: 10px;
+  border-color: #AC1E1E;
+  border-style: solid;
+  padding: 8px 40px;
+  margin: 30px 0px;
+  color: white;
+
+}
+
+.right-btn {
+  float: right;
+}
+
+.left-btn {
+  float: left;
+
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#upload-text {
+  margin-left: 50px
+}
+
+a.white-txt:link, a.white-txt:visited {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}
+
+.hide {
+  display: none;
+}
+
+.mydiv:hover + .hide {
+  display: block;
+}
+

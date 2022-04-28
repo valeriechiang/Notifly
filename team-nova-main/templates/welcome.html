@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/options.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h2 class="descriptive-text">Welcome, Sergeant Anderson</h2>
+
+    <div class="flex-h">
+        <div class="box-option">
+            <a class="option-text" href="{{url_for('uploadASIMS')}}" >Create New Export 
+                <br>+ 
+                <br> Send Notifications</a>
+        </div>
+
+    </div>
+    
+</div>
+{% endblock %}

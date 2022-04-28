@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/options.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h2 class="descriptive-text">Please select whether you would like to view extracted data or send the notification messages</h2>
+
+    <div class="flex-h">
+        <div class="box-option">
+            <a class="option-text" href="{{url_for('view_data')}}" >View Data</a>
+        </div>
+
+        <div class="box-option">
+            <a class="option-text" href="{{url_for('table')}}" >Send SMS</a>
+        </div>
+
+    </div>
+    
+</div>
+{% endblock %}

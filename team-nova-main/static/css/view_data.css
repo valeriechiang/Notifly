@@ -1,0 +1,26 @@
+.btn-red {
+    background-color: #AC1E1E;
+    border-radius: 10px;
+    border-color: #AC1E1E;
+    border-style: solid;
+    padding: 8px 40px;
+    margin: 30px 0px;
+    color: white;
+  
+  }
+  
+  .right-btn {
+    float: right;
+  }
+  
+  .left-btn {
+    float: left;
+  
+  }
+
+  a.white-txt:link, a.white-txt:visited {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+}

@@ -1,0 +1,136 @@
+ 
+<script>
+    main_chart_data={{main_chart_data|tojson}};
+    little_chart_data={{little_chart_data|tojson}};
+    console.log(main_chart_data)
+    console.log(little_chart_data)
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/view_data.css') }}">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawMainChart);
+
+
+  function drawMainChart() {
+    var data = google.visualization.arrayToDataTable(main_chart_data);
+    var options = {title:'Overall Breakdown of Due IMR Categories', 
+                  height: 375};
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+  }
+
+google.charts.setOnLoadCallback(drawDHLChart);
+  function drawDHLChart() {
+  let title = "DHL Breakdown"
+  let div_name = 'dhl-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['DHL'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawDentalChart);
+  function drawDentalChart() {
+  let title = "Dental Breakdown"
+  let div_name = 'dental-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['Dental'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawEqpChart);
+  function drawEqpChart() {
+  let title = "Equipment Breakdown"
+  let div_name = 'eqp-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['Eqp'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawImmChart);
+  function drawImmChart() {
+  let title = "Immunization Breakdown"
+  let div_name = 'imm-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['Imm'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawLabChart);
+  function drawLabChart() {
+  let title = "Lab Breakdown"
+  let div_name = 'lab-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['Lab'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+google.charts.setOnLoadCallback(drawPHAChart);
+  function drawPHAChart() {
+  let title = "PHA Breakdown"
+  let div_name = 'pha-chart'
+  var data = google.visualization.arrayToDataTable(little_chart_data['PHA'])
+
+  var options = {title:title,
+                height: 375};
+  var chart = new google.visualization.PieChart(document.getElementById(div_name));
+  chart.draw(data, options);
+}
+
+
+</script>
+
+
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+{% endblock %}
+  
+
+{% block body %}
+    <div id="welcome-content">
+        <h1 class="descriptive-text">View Data</h1>
+    </div>
+
+    
+
+    <div class="container">
+
+        <div class="col-md-12" id="piechart" style="border: 1px solid #ccc"></div>
+        <div class="col-md-6" id="dhl-chart" style="border: 1px solid #ccc"></div>
+        <div class="col-md-6" id="dental-chart" style="border: 1px solid #ccc"></div>
+        <div class="col-md-6" id="eqp-chart" style="border: 1px solid #ccc"></div>
+
+        <div class="col-md-6" id="imm-chart" style="border: 1px solid #ccc"></div>
+        <div class="col-md-6" id="lab-chart" style="border: 1px solid #ccc"></div>
+        <div class="col-md-6" id="pha-chart" style="border: 1px solid #ccc"></div>
+
+        <button class="btn-red left-btn">
+          <a class="white-txt" href="{{url_for('choose_option')}}" >Back</a>
+        </button>
+
+      </div>
+
+  
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+{% endblock %}
+
+{% block body %}
+<div id="welcome-content">
+  <h1 class="descriptive-text">Edit Phone Numbers</h1>
+
+  <h2 class="small-text">These are the airmen that are coming due or are due for an IMR requirement. Please enter any missing phone numbers so that they can receive the SMS notification.</h2>
+    <div class="table">
+        <table>
+          <tr>
+            {%for name in col_names%}
+            <th>{{name}}</th>
+            {%endfor%}
+            <th> Edit Phone Number </th>
+
+          </tr>
+
+          {%for i in range(0, num_rows)%}
+            <tr class="imr" status="{{df[i][3]}}">
+              {%for j in range(0, num_cols)%}
+              <td>{{df[i][j]}}</td>
+              {%endfor%}
+              <form action="/enterphonenumbers" method="post">
+                <!-- <td> number <button>edit</td> -->
+                <td> <input type="text" name="number.{{i}}" id="({{i}},{{j}}})"></input> <button type="submit">Submit</td>
+              </form>
+              
+            </tr>
+          {%endfor%}
+
+        </table>
+
+        <button class="btn-red right-btn">
+          <a class="white-txt" href="{{url_for('table')}}">Next</a>
+        </button>
+<!-- 
+        <button class="btn-red left-btn">
+          <a class="white-txt" href="{{url_for('userUploadASIMS')}}" >Back</a>
+        </button> -->
+        
+    </div>
+</div>
+{% endblock %}

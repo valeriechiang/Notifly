@@ -1,0 +1,83 @@
+#welcome-content {
+    text-align: center;
+    margin: 30px;
+}
+
+.descriptive-text {
+    color: #323B6C;
+    font-size: 18px;
+    font-weight: normal;
+    margin:5px;
+    margin-bottom: 15px;
+  }
+.small-text {
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.btn-green {
+  background-color: #2fac1e;
+  border-radius: 10px;
+  border-color: #2fac1e;
+  border-style: solid;
+  padding: 8px 40px;
+  float: right;
+  margin: 30px 0px;
+  color: white;
+
+}
+
+.btn-red {
+  background-color: #AC1E1E;
+  border-radius: 10px;
+  border-color: #AC1E1E;
+  border-style: solid;
+  padding: 8px 40px;
+  margin: 30px 0px;
+  color: white;
+
+}
+
+.right-btn {
+  float: right;
+}
+
+.left-btn {
+  float: left;
+
+}
+
+a.white-txt:link, a.white-txt:visited {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.imr[status="R"]{
+  background-color:#FFCCCB;
+}
+.imr[status="Y"]{
+  background-color:#FEF8DD;
+}
+.imr[status="G"]{
+  background-color:#E1F8DC;
+}

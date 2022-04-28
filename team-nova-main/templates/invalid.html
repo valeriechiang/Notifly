@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+<script>
+  $(document).ready(function () {
+    $("#download").click()
+      window.location.replace("/download")
+});
+</script> 
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h1 class="descriptive-text">Invalid Phone Numbers</h1>
+
+    <h2 class="small-text">These airmen were not notified via SMS since they do not have a valid phone number on the contact sheet</h2>
+
+    </div>
+    <div id="messages-form">
+      <form action="table" method="POST" enctype="multipart/form-data">
+        <div class="table">
+          <table>
+            <tr>
+              {%for name in col_names%}
+              <th>{{name}}</th>
+              {%endfor%}
+
+            </tr>
+
+            {%for i in range(0, num_rows)%}
+              <tr class="imr" status="{{df[i][3]}}">
+                {%for j in range(0, num_cols)%}
+                <td>{{df[i][j]}}</td>
+                {%endfor%}
+              </tr>
+            {%endfor%}
+
+          </table>
+          
+        </div>
+  
+      </form>
+    </div>
+  
+    
+</div>
+{% endblock %}

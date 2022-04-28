@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h1 class="descriptive-text">Welcome, User!</h1>
+
+    <h2 class="small-text">Please upload one ASIMS spreadsheet below</h2>
+    {%for message in err%}
+    <h2 class="error-text">{{message}}</h2>
+    {%endfor%}
+
+    <!-- <div class="dashed-box">
+
+    </div> -->
+    <div id="asims-form">
+      <form action="userUploadASIMS" method="POST" enctype="multipart/form-data">
+        <div class="dashed-box flex-v">
+          <div>
+            <label>Select spreadsheet</label>
+            <div id="upload-text">
+              <input type="file" name="asims">
+              <!-- <label class="custom-file-label" for="image">Select CSV...</label> -->
+            </div>
+          </div>
+  
+        </div>
+  
+  
+        <button type="submit" class="btn-red right-btn">
+          <a class="white-txt" >Next</a>
+          <!-- <h1 class="white-txt">Next</h1> -->
+          <!-- href="{{url_for('uploadphonenumbers')}}" -->
+        </button>
+
+        <!-- <button class="btn-red left-btn"> -->
+          <!-- <div class="fake-btn">
+            <a class="white-txt" href="{{url_for('select_user')}}" >Back</a>
+          </div> -->
+          
+        <!-- </button> -->
+
+      </form>
+    </div>
+  
+    
+</div>
+{% endblock %}

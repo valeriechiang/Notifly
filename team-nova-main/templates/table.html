@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'script.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+
+<div id="welcome-content">
+    <h1 class="descriptive-text">View SMS</h1>
+
+    <h2 class="small-text">These are the airmen that are coming due or are due for an IMR requirement. Hit 'send notification' to notify all identified airmen of yellow or red status</h2>
+
+    <!-- <div class="dashed-box">
+
+    </div> -->
+    <div id="messages-form">
+      <form action="table" method="POST" enctype="multipart/form-data">
+        <div class="table">
+          <table>
+            <tr>
+              {%for name in col_names%}
+              <th>{{name}}</th>
+              {%endfor%}
+
+            </tr>
+
+            {%for i in range(0, num_rows)%}
+              <tr class="imr" status="{{df[i][3]}}">
+                {%for j in range(0, num_cols)%}
+                <td>{{df[i][j]}}</td>
+                {%endfor%}
+              </tr>
+            {%endfor%}
+
+          </table>
+          
+        </div>
+  
+  
+        <button id="notification-submit" type="submit" class="btn-green">
+          <a class="white-txt" >Send Notification</a>
+        </button>
+
+        {% if is_superuser == true %}
+        <button class="btn-red left-btn">
+          <a class="white-txt" href="{{url_for('choose_option')}}" >Back</a>
+        </button>
+        {% else %}
+        <button class="btn-red left-btn">
+          <a class="white-txt" href="{{url_for('enterphonenumbers')}}" >Back</a>
+        </button>
+        {%endif%}
+
+      </form>
+    </div>
+  
+    
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
+{% block body %}
+<div id="class-content">
+    <h1 class="title-text">Processing, please wait</h1>
+    <h1 class="title-text">...</h1>
+    <h2 class="descriptive-text">You will automatically be directed to the next step once this step is finished</h2>
+
+</div>
+{% endblock %}
